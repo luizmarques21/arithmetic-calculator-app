@@ -1,0 +1,46 @@
+#root {
+    height: 100%;
+  }
+  
+  thead tr th {
+    font-size: 12px;
+  }
+  
+  tbody tr th {
+    font-size: 12px;
+  }
+  
+  tbody tr td {
+    font-size: 12px;
+  }
+  
+  .block-ui-message {
+    color: #362ad5;
+    font-weight: bold;
+  }
+  
+  @media only screen and  (max-width: 768px) {
+    .brand{
+      width: 120px;
+    }
+    .brand > a > img{
+      height: 25px;
+    }
+    .menu-color-first{
+      color: #fff !important;
+    }
+    .menu-color{
+      color: #296ba9 !important;
+    }
+  }
+  @media only screen and (min-width: 768px){
+    .brand{ 
+      width: 200px;
+    }
+    .menu-color-first{
+      color: #fff !important;
+    }
+    .menu-color{
+      color: #fff !important;
+    }
+  }
