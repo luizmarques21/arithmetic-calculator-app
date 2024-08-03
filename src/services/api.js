@@ -1,10 +1,8 @@
 import axios from "axios";
 import { getToken } from "./auth";
 
-const { API_HOST } = require("../config.json");
-
 const api = axios.create({
-  baseURL: API_HOST,
+  baseURL: process.env.REACT_APP_API_HOST
 });
 
 api.interceptors.request.use(async (config) => {
