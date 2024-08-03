@@ -5,6 +5,7 @@ import Login from "../pages/Login";
 import Header from "../components/Header";
 import PrivateRoute from "./private";
 import Operation from "../pages/Operation";
+import Records from "../pages/Record";
 
 const routes = () => (
     <BrowserRouter>
@@ -28,6 +29,15 @@ const routes = () => (
                 element={
                     <PrivateRoute redirectTo="">
                         <Operation />
+                    </PrivateRoute>
+                } 
+            />
+            <Route 
+                exact 
+                path="/records" 
+                element={
+                    <PrivateRoute redirectTo="">
+                        <Records />
                     </PrivateRoute>
                 } 
             />
